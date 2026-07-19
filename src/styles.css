@@ -1,0 +1,134 @@
+@import "tailwindcss" source(none);
+@import "tw-animate-css";
+
+@source "../src";
+
+/*
+ * Casa Caldas — Cinematic editorial design system.
+ * Warm white, sand beige, deep olive, woody tones, soft gold.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-sand: var(--sand);
+  --color-tan: var(--tan);
+  --color-olive: var(--olive);
+  --color-gold: var(--gold);
+  --color-ink: var(--ink);
+  --font-display: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+:root {
+  --radius: 0.25rem;
+  /* Cream, sand, tan, terracotta, deep walnut — warm editorial palette */
+  --background: oklch(0.955 0.028 78);
+  --foreground: oklch(0.28 0.04 50);
+  --ink: oklch(0.24 0.045 45);
+  --sand: oklch(0.91 0.04 75);
+  --tan: oklch(0.78 0.075 60);
+  --olive: oklch(0.42 0.075 45);
+  --gold: oklch(0.62 0.11 55);
+  --card: oklch(0.93 0.045 72);
+  --card-foreground: oklch(0.24 0.022 60);
+  --popover: oklch(0.965 0.022 82);
+  --popover-foreground: oklch(0.24 0.022 60);
+  --primary: oklch(0.42 0.075 45);
+  --primary-foreground: oklch(0.96 0.025 78);
+  --secondary: oklch(0.91 0.04 75);
+  --secondary-foreground: oklch(0.24 0.022 60);
+  --muted: oklch(0.93 0.03 78);
+  --muted-foreground: oklch(0.5 0.04 55);
+  --accent: oklch(0.62 0.11 55);
+  --accent-foreground: oklch(0.19 0.018 55);
+  --destructive: oklch(0.55 0.22 27);
+  --destructive-foreground: oklch(0.96 0.025 78);
+  --border: oklch(0.82 0.035 70);
+  --input: oklch(0.86 0.035 72);
+  --ring: oklch(0.62 0.11 55);
+}
+
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 0.01em;
+    /* Subtle warm paper grain for organic depth */
+    background-image:
+      radial-gradient(at 20% 10%, oklch(0.94 0.04 75 / 0.5) 0, transparent 55%),
+      radial-gradient(at 85% 90%, oklch(0.92 0.05 90 / 0.45) 0, transparent 55%);
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 300;
+    letter-spacing: -0.01em;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .font-display { font-family: var(--font-display); }
+  .font-sans { font-family: var(--font-sans); }
+  .eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--color-muted-foreground);
+  }
+  .text-balance { text-wrap: balance; }
+  .bg-sand { background-color: var(--color-sand); }
+  .bg-tan { background-color: var(--color-tan); }
+  .bg-olive { background-color: var(--color-olive); }
+  .bg-ink { background-color: var(--color-ink); }
+  .text-olive { color: var(--color-olive); }
+  .text-gold { color: var(--color-gold); }
+  .text-ink { color: var(--color-ink); }
+  .border-gold { border-color: var(--color-gold); }
+  .border-olive { border-color: var(--color-olive); }
+  .gallery-scroll {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .gallery-scroll::-webkit-scrollbar { display: none; }
+}
