@@ -6,6 +6,7 @@ import {
   useRouter,
   HeadContent,
   Scripts,
+  useRouterState,
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
@@ -32,7 +33,7 @@ function NotFoundComponent() {
   );
 }
 
-function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
+function ErrorComponent({ error, reset }: { error: unknown; reset: () => void }) {
   console.error(error);
   const router = useRouter();
 
@@ -73,17 +74,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Casa Caldas" },
-      { name: "description", content: "Casa Caldas — propriedade exclusiva em Teófilo Otoni, MG." },
-      { name: "author", content: "Casa Caldas" },
-      { property: "og:title", content: "Casa Caldas" },
-      { property: "og:description", content: "Casa Caldas — propriedade exclusiva em Teófilo Otoni, MG." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Casa Caldas" },
-      { name: "twitter:description", content: "Casa Caldas — propriedade exclusiva em Teófilo Otoni, MG." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3c742047-6a53-4337-b273-cb625b4a3dae/id-preview-d7292c15--f3951bc8-0c0c-4720-b8f9-b1e4fd4a690b.lovable.app-1779817871214.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3c742047-6a53-4337-b273-cb625b4a3dae/id-preview-d7292c15--f3951bc8-0c0c-4720-b8f9-b1e4fd4a690b.lovable.app-1779817871214.png" },
     ],
     links: [
       {
@@ -103,8 +93,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 });
 
 function RootShell({ children }: { children: React.ReactNode }) {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const lang = pathname === "/en" || pathname.startsWith("/en/") ? "en" : "pt-BR";
   return (
-    <html lang="en">
+    <html lang={lang}>
       <head>
         <HeadContent />
       </head>

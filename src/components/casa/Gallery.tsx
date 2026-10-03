@@ -6,7 +6,6 @@ import g2 from "@/assets/gallery-2.webp";
 import g3 from "@/assets/gallery-3.webp";
 import g4 from "@/assets/gallery-4.webp";
 import g5 from "@/assets/gallery-5.webp";
-import g6 from "@/assets/gallery-6.webp";
 import g7 from "@/assets/gallery-7.webp";
 import g8 from "@/assets/gallery-8.webp";
 import g9 from "@/assets/gallery-9.webp";
@@ -16,7 +15,8 @@ import g12 from "@/assets/gallery-12.webp";
 import { Reveal } from "./Reveal";
 import { t, type Lang } from "@/lib/translations";
 
-const srcs = [g1, g2, g3, g4, g5, g6, g7, g8, g9, g10, g11, g12];
+// gallery-6 is byte-identical to gallery-2 (used in Experiences), so it is not repeated here.
+const srcs = [g1, g2, g3, g4, g5, g7, g8, g9, g10, g11, g12];
 
 export function Gallery({ lang }: { lang: Lang }) {
   const tr = t[lang].gallery;
