@@ -7,29 +7,15 @@ import { Gallery } from "@/components/casa/Gallery";
 import { Tour } from "@/components/casa/Tour";
 import { Info } from "@/components/casa/Info";
 import { UsePotential } from "@/components/casa/UsePotential";
+import { Faq } from "@/components/casa/Faq";
 import { Contact } from "@/components/casa/Contact";
 import { Footer } from "@/components/casa/Footer";
 import { WhatsAppFloat } from "@/components/casa/WhatsAppFloat";
+import { buildHead } from "@/lib/seo";
+import { t } from "@/lib/translations";
 
 export const Route = createFileRoute("/en")({
-  head: () => ({
-    meta: [
-      { title: "Casa Caldas — Exclusive Property in Teófilo Otoni, MG" },
-      {
-        name: "description",
-        content:
-          "Contemporary colonial architecture, mature tropical gardens and a privileged city view. A rare property in Teófilo Otoni, Minas Gerais.",
-      },
-      { property: "og:title", content: "Casa Caldas — Exclusive Property in Teófilo Otoni" },
-      {
-        property: "og:description",
-        content: "Architecture, nature and privacy on a rare hillside in Minas Gerais.",
-      },
-      { property: "og:type", content: "website" },
-      { property: "og:locale", content: "en" },
-      { rel: "alternate", hrefLang: "pt", href: "/" },
-    ],
-  }),
+  head: () => buildHead("en", t.en.faq.items.map(({ q, a }) => ({ q, a }))),
   component: IndexEn,
 });
 
@@ -44,6 +30,7 @@ function IndexEn() {
       {/* <Tour lang="en" /> */}
       <Info lang="en" />
       <UsePotential lang="en" />
+      <Faq lang="en" />
       <Contact lang="en" />
       <Footer lang="en" />
       <WhatsAppFloat lang="en" />

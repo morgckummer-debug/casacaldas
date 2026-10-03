@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://casacaldas.vercel.app/sitemap.xml

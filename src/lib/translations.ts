@@ -28,10 +28,12 @@ export const t = {
     hero: {
       title: "Casa Caldas",
       eyebrow: "Teófilo Otoni · Minas Gerais",
-      subtitle: "Arquitetura, natureza e privacidade em Teófilo Otoni.",
+      subtitle: "Casa de alto padrão à venda em Teófilo Otoni, MG.",
+      facts: "5.250 m² de terreno · 1.000 m² construídos · R$ 4.100.000",
       cta: "Agendar visita privada",
+      ctaWhatsapp: "Falar no WhatsApp",
       scroll: "Role para descobrir",
-      imgAlt: "Fachada colonial da Casa Caldas com palmeiras e jardim ao entardecer",
+      imgAlt: "Fachada colonial da Casa Caldas, casa de alto padrão à venda em Teófilo Otoni, com palmeiras e jardim ao entardecer",
     },
     about: {
       eyebrow: "— Sobre a propriedade",
@@ -73,12 +75,11 @@ export const t = {
       heading: "Galeria de Fotos.",
       description: "Da fachada noturna à vista da cidade, cada ângulo revela um detalhe da propriedade.",
       images: [
-        { alt: "Vista aérea da Casa Caldas com telhado colonial, piscina e jardins", caption: "Vista aérea" },
-        { alt: "Vista da piscina ao entardecer com jardim tropical", caption: "Piscina · entardecer" },
-        { alt: "Piscina com jacuzzi e espreguiçadeiras ao entardecer", caption: "Piscina · jacuzzi" },
-        { alt: "Area gourmet integrada com arco colonial e jardim", caption: "Área gourmet" },
-        { alt: "Sala de jantar com mesa de vidro e lustre colonial", caption: "Sala de jantar" },
-        { alt: "Vista da piscina da Casa Caldas", caption: "Vista da piscina" },
+        { alt: "Vista aérea da Casa Caldas com telhado colonial, piscina e jardins, em Teófilo Otoni", caption: "Vista aérea" },
+        { alt: "Piscina da Casa Caldas ao entardecer, com jardim tropical, em Teófilo Otoni", caption: "Piscina · entardecer" },
+        { alt: "Piscina com jacuzzi e espreguiçadeiras ao entardecer na Casa Caldas", caption: "Piscina · jacuzzi" },
+        { alt: "Área gourmet integrada à piscina, com arco colonial e jardim, na Casa Caldas", caption: "Área gourmet" },
+        { alt: "Sala de jantar da Casa Caldas com lustre colonial e piso em madeira nobre", caption: "Sala de jantar" },
         { alt: "Cristaleira com peças em cristal", caption: "Cristaleira" },
         { alt: "Sala de café da manhã com mesa em madeira e paredes em mármore", caption: "Café da manhã" },
         { alt: "Sala de estar com sofás dourados e lustre de cristal", caption: "Sala de estar" },
@@ -139,6 +140,28 @@ export const t = {
       attendanceLabel: "Atendimento",
       attendanceValue: ["Apenas com agendamento prévio.", "Atendemos com total discrição."],
     },
+    faq: {
+      eyebrow: "— Perguntas frequentes",
+      heading: "Perguntas frequentes.",
+      items: [
+        {
+          q: "Qual o valor da Casa Caldas?",
+          a: "O valor de referência é R$ 4.100.000, com possibilidade de negociação.",
+        },
+        {
+          q: "Qual o tamanho do imóvel?",
+          a: "São 5.250 m² de terreno e 1.000 m² de área construída, distribuídos em dois pavimentos.",
+        },
+        {
+          q: "Como agendar uma visita?",
+          a: "As visitas são realizadas apenas com agendamento prévio e total discrição, pelo WhatsApp.",
+        },
+        {
+          q: "O imóvel pode ter uso comercial?",
+          a: "Sim. O terreno e a estrutura comportam usos como boutique hotel, spa, clínica premium, centro de eventos ou incorporação imobiliária.",
+        },
+      ],
+    },
     usePotential: {
       dividerLabel: "Potencial de Uso",
       eyebrow: "— Potencial de Uso",
@@ -189,12 +212,14 @@ export const t = {
       cta: "Schedule a Visit",
     },
     hero: {
-      title: "Caldas's House",
+      title: "Casa Caldas",
       eyebrow: "Teófilo Otoni · Minas Gerais",
-      subtitle: "Architecture, nature and privacy in Teófilo Otoni.",
+      subtitle: "Luxury house for sale in Teófilo Otoni, Brazil.",
+      facts: "5,250 m² plot · 1,000 m² built · R$ 4,100,000",
       cta: "Schedule a Private Visit",
+      ctaWhatsapp: "Chat on WhatsApp",
       scroll: "Scroll to discover",
-      imgAlt: "Colonial facade of Casa Caldas with palm trees and garden at dusk",
+      imgAlt: "Colonial facade of Casa Caldas, a luxury house for sale in Teófilo Otoni, with palm trees and garden at dusk",
     },
     about: {
       eyebrow: "— About the Property",
@@ -236,12 +261,11 @@ export const t = {
       heading: "Photo Gallery.",
       description: "From the night facade to the city view, every angle reveals a detail of the property.",
       images: [
-        { alt: "Aerial view of Casa Caldas with colonial roof, pool and gardens", caption: "Aerial View" },
-        { alt: "Pool view at dusk with tropical garden", caption: "Pool · Dusk" },
+        { alt: "Aerial view of Casa Caldas with colonial roof, pool and gardens in Teófilo Otoni", caption: "Aerial View" },
+        { alt: "Casa Caldas pool at dusk with tropical garden, Teófilo Otoni", caption: "Pool · Dusk" },
         { alt: "Pool with jacuzzi and lounge chairs at dusk", caption: "Pool · Jacuzzi" },
         { alt: "Integrated gourmet area with colonial arch and garden", caption: "Gourmet Area" },
-        { alt: "Dining room with glass table and colonial chandelier", caption: "Dining Room" },
-        { alt: "Pool view at Casa Caldas", caption: "Pool View" },
+        { alt: "Casa Caldas dining room with colonial chandelier and hardwood floor", caption: "Dining Room" },
         { alt: "Crystal display cabinet", caption: "Display Cabinet" },
         { alt: "Breakfast room with wooden table and marble walls", caption: "Breakfast Room" },
         { alt: "Living room with golden sofas and crystal chandelier", caption: "Living Room" },
@@ -301,6 +325,28 @@ export const t = {
       ],
       attendanceLabel: "Appointments",
       attendanceValue: ["By appointment only.", "We attend with complete discretion."],
+    },
+    faq: {
+      eyebrow: "— FAQ",
+      heading: "Frequently asked questions.",
+      items: [
+        {
+          q: "What is the price of Casa Caldas?",
+          a: "The reference price is R$ 4,100,000, subject to negotiation.",
+        },
+        {
+          q: "How large is the property?",
+          a: "5,250 m² of land with 1,000 m² of built area spread across two floors.",
+        },
+        {
+          q: "How can I schedule a visit?",
+          a: "Visits are by appointment only, held with complete discretion. Contact us on WhatsApp.",
+        },
+        {
+          q: "Can the property be used commercially?",
+          a: "Yes. The land and structure suit uses such as a boutique hotel, spa, premium clinic, events center or real estate development.",
+        },
+      ],
     },
     usePotential: {
       dividerLabel: "Use Potential",
