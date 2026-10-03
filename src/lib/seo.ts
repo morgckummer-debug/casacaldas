@@ -9,14 +9,14 @@ export const SEO = {
   pt: {
     title: "Casa de Alto Padrão à Venda em Teófilo Otoni, MG | Casa Caldas",
     description:
-      "Casa de alto padrão à venda em Teófilo Otoni, MG: 1.000 m² construídos, terreno de 5.250 m², piscina, sauna, adega e vista panorâmica. R$ 4.100.000.",
+      "Casa de alto padrão à venda no bairro Fátima, Teófilo Otoni, MG: 5 quartos, 1.000 m² construídos, terreno de 5.250 m², piscina e sauna. R$ 4.100.000.",
     locale: "pt_BR",
     ogImageAlt: "Fachada colonial da Casa Caldas, casa de alto padrão à venda em Teófilo Otoni",
   },
   en: {
     title: "Luxury House for Sale in Teófilo Otoni, MG, Brazil | Casa Caldas",
     description:
-      "Luxury house for sale in Teófilo Otoni, Minas Gerais: 1,000 m² built on a 5,250 m² hilltop plot with pool, sauna, wine cellar and panoramic city views. R$ 4,100,000.",
+      "Luxury house for sale in Fátima, Teófilo Otoni, Brazil: 5 bedrooms, 1,000 m² built on a 5,250 m² plot, pool, sauna and city views. R$ 4,100,000.",
     locale: "en_US",
     ogImageAlt: "Colonial facade of Casa Caldas, a luxury house for sale in Teófilo Otoni, Brazil",
   },
@@ -53,6 +53,8 @@ export function buildHead(lang: Lang, faq: ReadonlyArray<{ q: string; a: string 
         addressCountry: "BR",
       },
       floorSize: { "@type": "QuantitativeValue", value: 1000, unitCode: "MTK" },
+      numberOfBedrooms: 5,
+      numberOfBathroomsTotal: 4,
       additionalProperty: [
         {
           "@type": "PropertyValue",

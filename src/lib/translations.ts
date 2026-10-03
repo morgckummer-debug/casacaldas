@@ -28,8 +28,8 @@ export const t = {
     hero: {
       title: "Casa Caldas",
       eyebrow: "Teófilo Otoni · Minas Gerais",
-      subtitle: "Casa de alto padrão à venda em Teófilo Otoni, MG.",
-      facts: "5.250 m² de terreno · 1.000 m² construídos · R$ 4.100.000",
+      subtitle: "Casa de alto padrão à venda no bairro Fátima, Teófilo Otoni.",
+      facts: "5 quartos · 5.250 m² de terreno · 1.000 m² construídos · R$ 4.100.000",
       cta: "Agendar visita privada",
       ctaWhatsapp: "Falar no WhatsApp",
       scroll: "Role para descobrir",
@@ -110,7 +110,7 @@ export const t = {
       cta: "Conversar reservadamente",
       features: [
         "2 salas de estar",
-        "5 quartos + 2 suítes",
+        "5 quartos, sendo 2 suítes",
         "4 banheiros (2 suítes + 2 sociais)",
         "2 varandas amplas",
         "Piscina, spa e duchas",
@@ -123,6 +123,7 @@ export const t = {
         "Área verde com árvores frutíferas",
         "2 mirantes",
         "Nova área de lazer em construção",
+        "Documentação e IPTU em dia",
       ],
     },
     contact: {
@@ -131,7 +132,7 @@ export const t = {
       headingEm: "silenciosa",
       headingPost: " e exclusiva.",
       locationLabel: "Localização",
-      locationValue: ["Teófilo Otoni", "Minas Gerais · Brasil"],
+      locationValue: ["Bairro Fátima · Teófilo Otoni", "Minas Gerais · Brasil"],
       directLabel: "Contato direto",
       contacts: [
         { name: "Luciano", phone: "+55 (31) 99622-5903" },
@@ -151,6 +152,18 @@ export const t = {
         {
           q: "Qual o tamanho do imóvel?",
           a: "São 5.250 m² de terreno e 1.000 m² de área construída, distribuídos em dois pavimentos.",
+        },
+        {
+          q: "Quantos quartos tem a casa?",
+          a: "São 5 quartos, sendo 2 suítes, além de 2 salas de estar e 4 banheiros.",
+        },
+        {
+          q: "Onde fica a Casa Caldas?",
+          a: "No bairro Fátima, em Teófilo Otoni, Minas Gerais. O endereço completo é informado no agendamento da visita.",
+        },
+        {
+          q: "A documentação está em dia?",
+          a: "Sim. A documentação e o IPTU do imóvel estão em dia.",
         },
         {
           q: "Como agendar uma visita?",
@@ -214,8 +227,8 @@ export const t = {
     hero: {
       title: "Casa Caldas",
       eyebrow: "Teófilo Otoni · Minas Gerais",
-      subtitle: "Luxury house for sale in Teófilo Otoni, Brazil.",
-      facts: "5,250 m² plot · 1,000 m² built · R$ 4,100,000",
+      subtitle: "Luxury house for sale in the Fátima neighborhood, Teófilo Otoni.",
+      facts: "5 bedrooms · 5,250 m² plot · 1,000 m² built · R$ 4,100,000",
       cta: "Schedule a Private Visit",
       ctaWhatsapp: "Chat on WhatsApp",
       scroll: "Scroll to discover",
@@ -296,7 +309,7 @@ export const t = {
       cta: "Speak Privately",
       features: [
         "2 living rooms",
-        "5 bedrooms + 2 en-suite rooms",
+        "5 bedrooms, 2 of them en-suite",
         "4 bathrooms (2 en-suite + 2 guest)",
         "2 spacious verandas",
         "Pool, spa and showers",
@@ -309,6 +322,7 @@ export const t = {
         "Green area with fruit trees",
         "2 viewpoints",
         "New leisure area under construction",
+        "Documentation and property tax (IPTU) up to date",
       ],
     },
     contact: {
@@ -317,7 +331,7 @@ export const t = {
       headingEm: "silent",
       headingPost: " and exclusive visit.",
       locationLabel: "Location",
-      locationValue: ["Teófilo Otoni", "Minas Gerais · Brazil"],
+      locationValue: ["Fátima neighborhood · Teófilo Otoni", "Minas Gerais · Brazil"],
       directLabel: "Direct Contact",
       contacts: [
         { name: "Luciano", phone: "+55 (31) 99622-5903" },
@@ -337,6 +351,18 @@ export const t = {
         {
           q: "How large is the property?",
           a: "5,250 m² of land with 1,000 m² of built area spread across two floors.",
+        },
+        {
+          q: "How many bedrooms does the house have?",
+          a: "5 bedrooms, 2 of them en-suite, plus 2 living rooms and 4 bathrooms.",
+        },
+        {
+          q: "Where is Casa Caldas located?",
+          a: "In the Fátima neighborhood of Teófilo Otoni, Minas Gerais, Brazil. The full address is shared when the visit is scheduled.",
+        },
+        {
+          q: "Is the paperwork up to date?",
+          a: "Yes. The property documentation and property tax (IPTU) are up to date.",
         },
         {
           q: "How can I schedule a visit?",
