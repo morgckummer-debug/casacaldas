@@ -210,6 +210,7 @@ export const t = {
     },
     footer: {
       rights: "Todos os direitos reservados",
+      advertiser: "Anunciante: Morgana Fialho Caldas Kummer · Teófilo Otoni, MG",
     },
   },
   en: {
@@ -409,6 +410,7 @@ export const t = {
     },
     footer: {
       rights: "All rights reserved",
+      advertiser: "Advertiser: Morgana Fialho Caldas Kummer · Teófilo Otoni, MG",
     },
   },
 };

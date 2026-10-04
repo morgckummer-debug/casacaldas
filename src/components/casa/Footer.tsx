@@ -10,6 +10,7 @@ export function Footer({ lang }: { lang: Lang }) {
           © {new Date().getFullYear()} · Teófilo Otoni · {tr.rights}
         </p>
       </div>
+      <p className="mx-auto max-w-7xl mt-6 text-xs text-background/70">{tr.advertiser}</p>
     </footer>
   );
 }
