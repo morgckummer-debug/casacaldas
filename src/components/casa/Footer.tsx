@@ -7,10 +7,9 @@ export function Footer({ lang }: { lang: Lang }) {
       <div className="mx-auto max-w-7xl flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
         <p className="font-display text-2xl text-background tracking-[0.2em]">CASA · CALDAS</p>
         <p className="text-[0.7rem] tracking-[0.25em] uppercase">
-          © {new Date().getFullYear()} · Teófilo Otoni · {tr.rights}
+          © {new Date().getFullYear()} · Morgana Fialho Caldas Kummer · {tr.rights}
         </p>
       </div>
-      <p className="mx-auto max-w-7xl mt-6 text-xs text-background/70">{tr.advertiser}</p>
     </footer>
   );
 }
